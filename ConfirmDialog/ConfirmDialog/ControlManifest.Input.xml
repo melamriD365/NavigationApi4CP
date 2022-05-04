@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="NavigationApi4CP" constructor="ConfirmDialog" version="0.0.2" display-name-key="ConfirmDialog" description-key="ConfirmDialog description" control-type="standard" >
+    <property name="title" display-name-key="title" description-key="The title to be displayed in the confirmation dialog." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="subtitle" display-name-key="subtitle" description-key="The subtitle to be used displayed in the confirmation dialog." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="text" display-name-key="text" description-key="The message to be displayed in the confirmation dialog." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="confirmButtonLabel" display-name-key="confirmButtonLabel" description-key="The cancel button label. If you do not specify the cancel button label, Cancel is used as the button label." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="cancelButtonLabel" display-name-key="cancelButtonLabel" description-key="The message to be displayed in the alert dialog." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="height" display-name-key="height" description-key="Height of the confirmation dialog in pixels." of-type="Whole.None" usage="bound" required="true" />
+    <property name="width" display-name-key="width" description-key="Width of the confirmation dialog in pixels." of-type="Whole.None" usage="bound" required="true" />
+    <property name="displayState" display-name-key="displayState" description-key="display state of the confirm dialog." of-type="SingleLine.Text" usage="bound" required="false" default-value="closed"/>
+    <property name="confirmDialogResponse" display-name-key="ConfirmDialogResponse" description-key="Returns an object with the confirmed (Boolean) attribute is passed that indicates whether the confirm button was clicked to close the dialog." of-type="TwoOptions" usage="bound" required="false" default-value="false"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>

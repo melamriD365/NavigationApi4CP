@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="NavigationApi4CP" constructor="AlertDialog" version="0.0.2" display-name-key="AlertDialog" description-key="Displays an alert dialog containing a message and a button" control-type="standard" >
+    <property name="title" display-name-key="title" description-key="The title of the alert dialog" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="text" display-name-key="text" description-key="The message to be displayed in the alert dialog" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="confirmButtonLabel" display-name-key="confirmButtonLabel" description-key="The confirm button label. If you do not specify the button label, OK is used as the button label" of-type="SingleLine.Text" usage="bound" required="false" />
+    <property name="height" display-name-key="height" description-key="Height of the alert dialog in pixels" of-type="Whole.None" usage="bound" required="true" />
+    <property name="width" display-name-key="width" description-key="Width of the alert dialog in pixels" of-type="Whole.None" usage="bound" required="false" />
+    <property name="displayState" display-name-key="displayState" description-key="display state of the alert" of-type="SingleLine.Text" usage="bound" required="false" default-value="closed"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>

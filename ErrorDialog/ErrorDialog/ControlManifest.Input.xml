@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="NavigationApi4CP" constructor="ErrorDialog" version="0.0.1" display-name-key="ErrorDialog" description-key="ErrorDialog description" control-type="standard" >
+    <property name="details" display-name-key="details" description-key="Details about the error. When you specify this, the Download Log File button is available in the error message, and clicking it will let users download a text file with the content specified in this attribute." of-type="Multiple" usage="bound" required="true" />
+    <property name="errorCode" display-name-key="errorCode" description-key="The error code. If you just set errorCode, the message for the error code is automatically retrieved from the server and displayed in the error dialog. If you specify an errorCode value, an error dialog with a default error message is displayed." of-type="Whole.None" usage="bound" required="true" />
+    <property name="message" display-name-key="message" description-key="The message to be displayed in the error dialog. You must set either the errorCode or message attribute." of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="displayState" display-name-key="displayState" description-key="display state of the Error dialog." of-type="SingleLine.Text" usage="bound" required="false" default-value="closed"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
